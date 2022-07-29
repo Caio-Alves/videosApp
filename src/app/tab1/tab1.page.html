@@ -1,17 +1,32 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="dark">
     <ion-title>
-      Iberdrola
+      My Videos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" color="light">
+  <ion-searchbar placeholder="Buscar"></ion-searchbar>
 
-    <h1>Neoenergia Elektro</h1>
+  <ion-list>
+    <ion-item lines = "full">
+      <ion-thumbnail slot="start">
+        <img src="https://www.themoviedb.org/t/p/w1280/sKK8syhz0sEoRVjb6OKULuMLCq3.jpg">
 
-    <img src="https://www.neoenergia.com/pt-br/sala-de-imprensa/noticias/PublishingImages/sala-de-imprensa/saldao-baixa-renda.jpg" alt="">
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap">
+        <div>
+          <h1>Superman: O Filme (1978)</h1>
+          <p>13/12/1978 (BR) - 2h 23m</p>
+          <p>Ficção científica, Ação, Aventura</p>
+        </div>
+      </ion-label>
 
-    <a href = "https://neoenergiaelektro.negocieonline.com.br/site">Negociação Online de Débitos</a>
+      <ion-chip color="success" outline>
+        <ion-label>71%</ion-label>
+      </ion-chip>
+    </ion-item>
+  </ion-list>
 
 </ion-content>
