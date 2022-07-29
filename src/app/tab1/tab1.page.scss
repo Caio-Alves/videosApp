@@ -1,10 +1,13 @@
+main{
+  background-color: red;
+}
 ion-item{
   --padding-start:10px;
   --iner-padding-end: 10px;
 
   ion-thumbnail{
     height: 100%;
-    margin-inline-end: 10px;
+    margin-inline-end: 5px;
   }
 
   h1{
@@ -23,4 +26,7 @@ ion-item{
   ion-chip{
     padding-inline: 3px;
   }
+}
+.sc-ion-label-md-s p{
+  line-height: 15px;
 }

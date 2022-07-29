@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="dark">
     <ion-title>
-      My Videos
+      My Filmes
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,23 +10,93 @@
   <ion-searchbar placeholder="Buscar"></ion-searchbar>
 
   <ion-list>
-    <ion-item lines = "full">
-      <ion-thumbnail slot="start">
-        <img src="https://www.themoviedb.org/t/p/w1280/sKK8syhz0sEoRVjb6OKULuMLCq3.jpg">
 
-      </ion-thumbnail>
-      <ion-label class="ion-text-wrap">
-        <div>
-          <h1>Superman: O Filme (1978)</h1>
-          <p>13/12/1978 (BR) - 2h 23m</p>
-          <p>Ficção científica, Ação, Aventura</p>
-        </div>
-      </ion-label>
+    <!--Primeiro Filme-->
+    <ion-item-sliding>
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="https://www.themoviedb.org/t/p/w1280/sKK8syhz0sEoRVjb6OKULuMLCq3.jpg" />
+        </ion-thumbnail>
 
-      <ion-chip color="success" outline>
-        <ion-label>71%</ion-label>
-      </ion-chip>
-    </ion-item>
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>Superman: O Filme (1978)</h1>
+            <p>13/12/1978 (BR) - 2h 23m</p>
+            <p>Ficção científica, Ação, Aventura</p>
+          </div>
+        </ion-label>
+
+        <ion-chip color="success" outline>
+          <ion-label>71%</ion-label>
+        </ion-chip>
+
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option (click)="exibirAlertaFavorito()">
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <!--Segundo Filme-->
+    <ion-item-sliding>
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="https://www.themoviedb.org/t/p/w1280/wd7b4Nv9QBHDTIjc2m7sr0IUMoh.jpg" />
+        </ion-thumbnail>
+
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>Batman (2022)</h1>
+            <p>03/03/2022 (BR) - 3h 5m</p>
+            <p>Crime, Mistério, Thriller</p>
+          </div>
+        </ion-label>
+
+        <ion-chip color="success" outline>
+          <ion-label>78%</ion-label>
+        </ion-chip>
+
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option (click)="exibirAlertaFavorito()">
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <!--Terceiro Filme-->
+    <ion-item-sliding>
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img src="https://www.themoviedb.org/t/p/w1280/l814mpV0kU3TH3HfZpgKM62zRan.jpg" />
+        </ion-thumbnail>
+
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>O Peso do Talento (2022)</h1>
+            <p>
+              12/05/2022 (BR) - 1h 47m</p>
+            <p>Ação, Comédia, Crime</p>
+          </div>
+        </ion-label>
+
+        <ion-chip color="success" outline>
+          <ion-label>70%</ion-label>
+        </ion-chip>
+
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option (click)="exibirAlertaFavorito()">
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+
   </ion-list>
 
 </ion-content>
